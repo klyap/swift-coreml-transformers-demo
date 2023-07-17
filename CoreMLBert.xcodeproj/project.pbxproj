@@ -68,6 +68,7 @@
 		79F2CCA022C666C7009F8551 /* question_tokens.json in Resources */ = {isa = PBXBuildFile; fileRef = 79F2CC9F22C666C7009F8551 /* question_tokens.json */; };
 		79F2CCA222C6717E009F8551 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F2CCA122C6717D009F8551 /* LoaderView.swift */; };
 		79F7060E22EA0CA900C4432C /* BERTSQUADFP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 79F2CC9022C5590C009F8551 /* BERTSQUADFP16.mlmodel */; };
+		FB492A702A64FD1D00F72CD4 /* float32_model.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = FB492A6F2A64FD1D00F72CD4 /* float32_model.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		79F2CC9D22C57825009F8551 /* BertForQATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BertForQATests.swift; sourceTree = "<group>"; };
 		79F2CC9F22C666C7009F8551 /* question_tokens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = question_tokens.json; sourceTree = "<group>"; };
 		79F2CCA122C6717D009F8551 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		FB492A6F2A64FD1D00F72CD4 /* float32_model.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = float32_model.mlpackage; path = "../../TinyStories-1M/coreml/text-generation/float32_model.mlpackage"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		7944CDBD22C501AF000C0B1E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FB492A6F2A64FD1D00F72CD4 /* float32_model.mlpackage */,
 				79D94AD5234CE4830033EA7D /* gpt2-64-12.mlmodel */,
 				799F42E1234CDF70006CDB03 /* distilgpt2-64-6.mlmodel */,
 				7944CDBE22C501D6000C0B1E /* dev-v1.1.json */,
@@ -457,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				796DF55422E1026700140C02 /* ViewController.swift in Sources */,
+				FB492A702A64FD1D00F72CD4 /* float32_model.mlpackage in Sources */,
 				796DF58722E2727000140C02 /* GPT2.swift in Sources */,
 				796DF56F22E1039C00140C02 /* SquadDataset.swift in Sources */,
 				796DF55022E1026700140C02 /* AppDelegate.swift in Sources */,

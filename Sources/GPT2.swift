@@ -10,6 +10,7 @@ import Foundation
 import CoreML
 
 
+@available(iOS 15.0, *)
 class GPT2 {
     
     enum DecodingStrategy {
@@ -21,13 +22,31 @@ class GPT2 {
         case topP(Double)
     }
     
-    private let model = distilgpt2_64_6()
+    private let model: float32_model
     public let tokenizer = GPT2Tokenizer()
-    public let seqLen = 64
+    public let seqLen = 32
     private let strategy: DecodingStrategy
     
     init(strategy: DecodingStrategy = .greedy) {
         self.strategy = strategy
+        
+        var llmModel: float32_model {
+
+            do {
+
+            print("initializing model");
+
+            return try float32_model(configuration: .init())
+
+            } catch {
+
+            fatalError("Couldn't load LLM model due to: \(error.localizedDescription)")
+
+            }
+
+        }
+
+        self.model = llmModel
     }
     
     /// Main prediction loop:
@@ -48,10 +67,10 @@ class GPT2 {
             Array(0..<seqLen)
         )
         
-        let output = try! model.prediction(input_ids: input_ids, position_ids: position_ids)
+        let output = try! model.prediction(input_ids: input_ids, attention_mask: position_ids)
         
         let outputLogits = MLMultiArray.slice(
-            output.output_logits,
+            output.token_scores,
             indexing: [.select(0), .select(maxTokens.count - 1), .slice, .select(0), .select(0)]
         )
         

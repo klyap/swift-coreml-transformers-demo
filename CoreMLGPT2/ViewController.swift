@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 15.0, *)
 class ViewController: UIViewController {
     @IBOutlet weak var shuffleBtn: UIButton!
     @IBOutlet weak var triggerBtn: UIButton!
