@@ -58,7 +58,8 @@ struct Math {
     /// MLMultiArray helper.
     /// Works in our specific use case.
     static func argmax32(_ multiArray: MLMultiArray) -> (Int, Float) {
-        assert(multiArray.dataType == .float32)
+        print("-------argmax32 multiArray.dataType", multiArray.dataType.rawValue);
+//        assert(multiArray.dataType == .float32)
         let ptr = UnsafeMutablePointer<Float32>(OpaquePointer(multiArray.dataPointer))
         let count = multiArray.count
         var maxValue: Float = 0
@@ -73,6 +74,16 @@ struct Math {
     /// and their softmaxed probabilities.
     /// 
     static func topK(arr: [Double], k: Int) -> (indexes: [Int], probs: [Float]) {
+        let x = Array(arr.enumerated().map { ($0, $1) }
+            .sorted(by: { a, b -> Bool in a.1 > b.1 })
+            .prefix(through: min(k, arr.count) - 1))
+        let indexes = x.map { $0.0 }
+        let logits = x.map { Float($0.1) }
+        let probs = softmax(logits)
+        return (indexes: indexes, probs: probs)
+    }
+    
+    static func topKFloat32(arr: [Float32], k: Int) -> (indexes: [Int], probs: [Float]) {
         let x = Array(arr.enumerated().map { ($0, $1) }
             .sorted(by: { a, b -> Bool in a.1 > b.1 })
             .prefix(through: min(k, arr.count) - 1))

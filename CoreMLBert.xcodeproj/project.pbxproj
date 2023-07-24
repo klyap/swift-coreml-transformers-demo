@@ -37,8 +37,6 @@
 		79908C17234E99B100D0FE5B /* DistilbertForQATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79908C16234E99B100D0FE5B /* DistilbertForQATests.swift */; };
 		79908C19234EAB5400D0FE5B /* distilbert-squad-384_FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 79908C18234EAB5300D0FE5B /* distilbert-squad-384_FP16.mlmodel */; };
 		79908C1A234EAB5400D0FE5B /* distilbert-squad-384_FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 79908C18234EAB5300D0FE5B /* distilbert-squad-384_FP16.mlmodel */; };
-		799F42E2234CDF70006CDB03 /* distilgpt2-64-6.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 799F42E1234CDF70006CDB03 /* distilgpt2-64-6.mlmodel */; };
-		79D94AD6234CE4830033EA7D /* gpt2-64-12.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 79D94AD5234CE4830033EA7D /* gpt2-64-12.mlmodel */; };
 		79F2CC5C22C50078009F8551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F2CC5B22C50078009F8551 /* AppDelegate.swift */; };
 		79F2CC5E22C50078009F8551 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F2CC5D22C50078009F8551 /* SceneDelegate.swift */; };
 		79F2CC6022C50078009F8551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F2CC5F22C50078009F8551 /* ViewController.swift */; };
@@ -69,6 +67,7 @@
 		79F2CCA222C6717E009F8551 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F2CCA122C6717D009F8551 /* LoaderView.swift */; };
 		79F7060E22EA0CA900C4432C /* BERTSQUADFP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 79F2CC9022C5590C009F8551 /* BERTSQUADFP16.mlmodel */; };
 		FB492A702A64FD1D00F72CD4 /* float32_model.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = FB492A6F2A64FD1D00F72CD4 /* float32_model.mlpackage */; };
+		FB9B71232A6CC6B300C1D285 /* UIViewController+dismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B71222A6CC6B300C1D285 /* UIViewController+dismissKeyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,8 +110,6 @@
 		79908C13234E95FB00D0FE5B /* distilbert-squad-384.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "distilbert-squad-384.mlmodel"; sourceTree = "<group>"; };
 		79908C16234E99B100D0FE5B /* DistilbertForQATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistilbertForQATests.swift; sourceTree = "<group>"; };
 		79908C18234EAB5300D0FE5B /* distilbert-squad-384_FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "distilbert-squad-384_FP16.mlmodel"; sourceTree = "<group>"; };
-		799F42E1234CDF70006CDB03 /* distilgpt2-64-6.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "distilgpt2-64-6.mlmodel"; sourceTree = "<group>"; };
-		79D94AD5234CE4830033EA7D /* gpt2-64-12.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "gpt2-64-12.mlmodel"; sourceTree = "<group>"; };
 		79F2CC5822C50078009F8551 /* CoreMLBert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLBert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F2CC5B22C50078009F8551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79F2CC5D22C50078009F8551 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +135,7 @@
 		79F2CC9F22C666C7009F8551 /* question_tokens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = question_tokens.json; sourceTree = "<group>"; };
 		79F2CCA122C6717D009F8551 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		FB492A6F2A64FD1D00F72CD4 /* float32_model.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = float32_model.mlpackage; path = "../../TinyStories-1M/coreml/text-generation/float32_model.mlpackage"; sourceTree = "<group>"; };
+		FB9B71222A6CC6B300C1D285 /* UIViewController+dismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+dismissKeyboard.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,8 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				FB492A6F2A64FD1D00F72CD4 /* float32_model.mlpackage */,
-				79D94AD5234CE4830033EA7D /* gpt2-64-12.mlmodel */,
-				799F42E1234CDF70006CDB03 /* distilgpt2-64-6.mlmodel */,
 				7944CDBE22C501D6000C0B1E /* dev-v1.1.json */,
 				79F2CC8422C50F87009F8551 /* vocab.txt */,
 				79F2CC8722C51E03009F8551 /* basic_tokenized_questions.json */,
@@ -203,6 +199,7 @@
 				796DF55822E1026700140C02 /* Assets.xcassets */,
 				796DF55A22E1026700140C02 /* LaunchScreen.storyboard */,
 				796DF55D22E1026800140C02 /* Info.plist */,
+				FB9B71222A6CC6B300C1D285 /* UIViewController+dismissKeyboard.swift */,
 			);
 			path = CoreMLGPT2;
 			sourceTree = "<group>";
@@ -465,14 +462,13 @@
 				796DF56F22E1039C00140C02 /* SquadDataset.swift in Sources */,
 				796DF55022E1026700140C02 /* AppDelegate.swift in Sources */,
 				796DF57222E1039C00140C02 /* Utils.swift in Sources */,
-				79D94AD6234CE4830033EA7D /* gpt2-64-12.mlmodel in Sources */,
+				FB9B71232A6CC6B300C1D285 /* UIViewController+dismissKeyboard.swift in Sources */,
 				796DF57422E1039C00140C02 /* MLMultiArray+Utils.swift in Sources */,
 				796DF57022E1039C00140C02 /* BertTokenizer.swift in Sources */,
 				796DF57522E1039C00140C02 /* GPT2Tokenizer.swift in Sources */,
 				796DF55222E1026700140C02 /* SceneDelegate.swift in Sources */,
 				796DF57322E1039C00140C02 /* Math.swift in Sources */,
 				796DF57622E1039C00140C02 /* GPT2ByteEncoder.swift in Sources */,
-				799F42E2234CDF70006CDB03 /* distilgpt2-64-6.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,13 +577,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2EADP68M95;
+				DEVELOPMENT_TEAM = 5TY42HS9HP;
 				INFOPLIST_FILE = CoreMLGPT2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ai.katia.Katia.CoreMLGPT2;
+				PRODUCT_BUNDLE_IDENTIFIER = coreml.tinystories.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -599,13 +595,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2EADP68M95;
+				DEVELOPMENT_TEAM = 5TY42HS9HP;
 				INFOPLIST_FILE = CoreMLGPT2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ai.katia.Katia.CoreMLGPT2;
+				PRODUCT_BUNDLE_IDENTIFIER = coreml.tinystories.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -704,7 +700,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -758,7 +754,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
