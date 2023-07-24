@@ -58,8 +58,6 @@ struct Math {
     /// MLMultiArray helper.
     /// Works in our specific use case.
     static func argmax32(_ multiArray: MLMultiArray) -> (Int, Float) {
-        print("-------argmax32 multiArray.dataType", multiArray.dataType.rawValue);
-//        assert(multiArray.dataType == .float32)
         let ptr = UnsafeMutablePointer<Float32>(OpaquePointer(multiArray.dataPointer))
         let count = multiArray.count
         var maxValue: Float = 0
