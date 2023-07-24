@@ -8,20 +8,27 @@
 
 import UIKit
 
+@available(iOS 15.0, *)
 class ViewController: UIViewController {
     @IBOutlet weak var shuffleBtn: UIButton!
     @IBOutlet weak var triggerBtn: UIButton!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var speedLabel: UILabel!
     
-    let model = GPT2(strategy: .topK(40))
+//    let model = GPT2(strategy: .topK(40))
+    let model = GPT2()
+
+//    let prompts = [
+//        "Before boarding your rocket to Mars, remember to pack these items",
+//        "In a shocking finding, scientist discovered a herd of unicorns living in a remote, previously unexplored valley, in the Andes Mountains. Even more surprising to the researchers was the fact that the unicorns spoke perfect English.",
+//        "Legolas and Gimli advanced on the orcs, raising their weapons with a harrowing war cry.",
+//        "Today, scientists confirmed the worst possible outcome: the massive asteroid will collide with Earth",
+//        "Hugging Face is a company that releases awesome projects in machine learning because",
+//    ]
     
     let prompts = [
-        "Before boarding your rocket to Mars, remember to pack these items",
-        "In a shocking finding, scientist discovered a herd of unicorns living in a remote, previously unexplored valley, in the Andes Mountains. Even more surprising to the researchers was the fact that the unicorns spoke perfect English.",
-        "Legolas and Gimli advanced on the orcs, raising their weapons with a harrowing war cry.",
-        "Today, scientists confirmed the worst possible outcome: the massive asteroid will collide with Earth",
-        "Hugging Face is a company that releases awesome projects in machine learning because",
+        "Write a story about the beach.",
+        "Today, we will "
     ]
     
     override func viewDidLoad() {
@@ -30,7 +37,9 @@ class ViewController: UIViewController {
         shuffle()
         shuffleBtn.addTarget(self, action: #selector(shuffle), for: .touchUpInside)
         triggerBtn.addTarget(self, action: #selector(trigger), for: .touchUpInside)
+        self.dismissKeyboard()
         
+        textView.isScrollEnabled = true
         textView.flashScrollIndicators()
         self.speedLabel.text = "0"
     }
