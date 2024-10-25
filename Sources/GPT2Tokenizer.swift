@@ -154,7 +154,6 @@ class GPT2Tokenizer {
     
     /// Decode
     func decode(tokens: [Int]) -> String {
-        print("------decode tokens", tokens)
         let text = tokens.map { decoder[$0]! }.joined(separator: "")
         let utfCodepoints = text.map { byteDecoder[String($0)]! }
         return String(decoding: utfCodepoints, as: UTF8.self)

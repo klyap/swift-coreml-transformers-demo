@@ -94,7 +94,7 @@
 		796DF51322E0EE7800140C02 /* gpt2-merges.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gpt2-merges.txt"; sourceTree = "<group>"; };
 		796DF51422E0EE7800140C02 /* gpt2-vocab.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "gpt2-vocab.json"; sourceTree = "<group>"; };
 		796DF51922E0FF7A00140C02 /* GPT2ByteEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT2ByteEncoder.swift; sourceTree = "<group>"; };
-		796DF54D22E1026700140C02 /* CoreMLGPT2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLGPT2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		796DF54D22E1026700140C02 /* TinyStories On-Device.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TinyStories On-Device.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		796DF54F22E1026700140C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		796DF55122E1026700140C02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		796DF55322E1026700140C02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -232,7 +232,7 @@
 			children = (
 				79F2CC5822C50078009F8551 /* CoreMLBert.app */,
 				79F2CC6E22C5007B009F8551 /* CoreMLBertTests.xctest */,
-				796DF54D22E1026700140C02 /* CoreMLGPT2.app */,
+				796DF54D22E1026700140C02 /* TinyStories On-Device.app */,
 				796DF56222E1026800140C02 /* CoreMLGPT2Tests.xctest */,
 			);
 			name = Products;
@@ -297,7 +297,7 @@
 			);
 			name = CoreMLGPT2;
 			productName = CoreMLGPT2;
-			productReference = 796DF54D22E1026700140C02 /* CoreMLGPT2.app */;
+			productReference = 796DF54D22E1026700140C02 /* TinyStories On-Device.app */;
 			productType = "com.apple.product-type.application";
 		};
 		796DF56122E1026800140C02 /* CoreMLGPT2Tests */ = {
@@ -577,14 +577,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 5TY42HS9HP;
 				INFOPLIST_FILE = CoreMLGPT2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = coreml.tinystories.sample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "TinyStories On-Device";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -595,14 +597,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 5TY42HS9HP;
 				INFOPLIST_FILE = CoreMLGPT2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = coreml.tinystories.sample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "TinyStories On-Device";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

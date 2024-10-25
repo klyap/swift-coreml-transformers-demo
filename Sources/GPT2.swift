@@ -31,19 +31,12 @@ class GPT2 {
         self.strategy = strategy
         
         var llmModel: float32_model {
-
             do {
-
-            print("initializing model");
-
-            return try float32_model(configuration: .init())
-
+                print("initializing model");
+                return try float32_model(configuration: .init())
             } catch {
-
-            fatalError("Couldn't load LLM model due to: \(error.localizedDescription)")
-
+                fatalError("Couldn't load LLM model due to: \(error.localizedDescription)")
             }
-
         }
 
         self.model = llmModel
